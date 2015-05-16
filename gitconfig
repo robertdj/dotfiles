@@ -1,0 +1,28 @@
+[user]
+	name = Robert DJ
+	email = git@dahl-jacobsen.dk
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+	rv = remote -v
+	ba = branch -a
+[push]
+	default = simple
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[github]
+	user = robertdj
+[color]
+	ui = auto
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+
+[mergetool "sourcetree"]
+	cmd = /Volumes/SourceTree/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

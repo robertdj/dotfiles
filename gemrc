@@ -1,0 +1,3 @@
+# Don't install rdoc and ri
+gem: --no-rdoc --no-ri
+

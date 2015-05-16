@@ -1,0 +1,14 @@
+startup_message off
+vbell on
+autodetach on
+
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+hardstatus alwayslastline "%w"
+activity "Activity in %n (%t) [%w:%s]~"
+
+shelltitle ""
+
+shell -$SHELL
+defscrollback 1000
+

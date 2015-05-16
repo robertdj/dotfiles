@@ -1,0 +1,35 @@
+# Mac
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# R 
+*.Rhistory
+
+# LaTeX files
+*.pdf
+*-blx.bib
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.ist
+*.log
+*.nav
+*.out
+*.ps
+*.sed
+*.snm
+*.spl
+*.thm
+*.toc
+*.xml
+
