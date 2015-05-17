@@ -18,7 +18,7 @@ bindkey -v
 source ~/.zsh/zgen/zgen.zsh
 
 if ! zgen saved; then
-	echo "Creating a zgen save"
+	echo "Creating a zgen save\n"
 
 	# Funky syntax highlighting
 	# Should be loaded before history search script
@@ -38,6 +38,7 @@ fi
 # Many are copied from Oh My ZSH
 
 source ~/.zsh/alias.zsh 	 # Aliases
+source ~/.host_alias.zsh 	 # Host specific aliases
 source ~/.zsh/completion.zsh
 source ~/.zsh/envvar.zsh 	 # Environment variables
 source ~/.zsh/function.zsh 	 # Shell functions

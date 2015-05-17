@@ -1,5 +1,5 @@
-DOTFILES_DIRS="/home/robert/Documents/dotfiles /Users/robert/Documents/dotfiles"
+DOTFILES_DIRS="$HOME/Documents/dotfiles"
 
-EXCLUDES="README.md osx"
+EXCLUDES="README.md"
 
 SYMLINK_DIRS="vim zsh"
