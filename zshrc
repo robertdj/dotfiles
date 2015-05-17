@@ -13,17 +13,24 @@ bindkey -v
 
 
 # ------------------------------------------------------------ 
-# ZSH bundles handled by Antigen
+# ZSH bundles handled by zgen
 
-source ~/.zsh/antigen.zsh
+source ~/.zsh/zgen/zgen.zsh
 
-# Funky syntax highlighting
-# Should be loaded before history search script
-antigen bundle zsh-users/zsh-syntax-highlighting
+if ! zgen saved; then
+	echo "Creating a zgen save"
 
-# Search history
-# Match the already written part
-antigen bundle zsh-users/zsh-history-substring-search
+	# Funky syntax highlighting
+	# Should be loaded before history search script
+	zgen load zsh-users/zsh-syntax-highlighting
+
+	# Search history
+	# Match the already written part
+	zgen load zsh-users/zsh-history-substring-search
+
+	# Save all to init script
+	zgen save
+fi
 
 
 # ------------------------------------------------------------ 
