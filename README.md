@@ -38,6 +38,11 @@ To manage this, I have the following setup:
 
 Currently the operating systems only differ in the shell aliases.
 
+I use further tagging to manage
+
+- Latex: [tikz2pdf](https://github.com/robertdj/tikz2pdf) and [latexmk](http://ctan.org/pkg/latexmk).
+- Computing tools: [Julia](http://julialang.org), [R](http://www.r-project.org) and [INLA](http://www.r-inla.org).
+
 
 ## Vim
 
