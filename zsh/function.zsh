@@ -2,6 +2,22 @@ function zsh_stats() {
   fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20
 }
 
+
+function leases()
+{
+	if [ "$1" != "" ]; then
+		EDGE="$1"
+	else
+		EDGE="edge"
+	fi
+
+	'ssh edge "/opt/vyatta/bin/vyatta-op-cmd-wrapper show dhcp leases"'
+}
+
+
+# ------------------------------------------------------------
+# Function for Git status in shell
+
 # get the name of the branch we are on
 function git_prompt_info() {
   if [[ "$(command git config --get oh-my-zsh.hide-status 2>/dev/null)" != "1" ]]; then
