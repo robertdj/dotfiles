@@ -23,7 +23,27 @@ The dotfiles are related to
 - tmux
 
 
+## Computer specific setup
+
+At home I have one Mac and multiple computers with GNU/Linux.
+At work I have a laptop with GNU/Linux and access to (but no administration rights over) servers with GNU/Linux.
+
+Where possible, I use ZSH as my shell and tmux as my terminal multiplexer.
+Alternatively, I use BASH and GNU Screen.
+To manage this, I have the following setup:
+
+- A `host` folder for my Mac.
+- A `tag` for GNU/Linux.
+- A `tag` for BASH (that also includes the `screenrc`).
+
+Currently the operating systems only differ in the shell aliases.
+
+
 ## Vim
+
+My one & only editor is Vim and I manage plugins with [Vundle](https://github.com/gmarik/Vundle.vim).
+On a fresh install/new user Vundle has to be installed and the plugins have to be downloaded and installed.
+As illustrated on the Thoughbots [webpage](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos), this can be accomplished with a hook.
 
 The `.vim` directory is symlinked on the top level (as specified in the `rcrc` file).
 
