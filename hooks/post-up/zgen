@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+CurrentDir=$(pwd)
+
+RUNDIR=$(cd $(dirname $0) ; pwd -P)
+cd $RUNDIR
+
+# Make sure zgen submodule is present and updated
+if [ -z "$(ls $HOME/.zsh/zgen)" ]; then
+	git submodule init
+fi
+
+git submodule update
+
+cat <<- _EOF_
+
+To update plugins for zsh run:
+zgen update
+zgen save
+
+_EOF_
+
+cd $CurrentDir
+
