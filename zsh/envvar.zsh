@@ -8,6 +8,7 @@ export MANPATH="/usr/local/texlive/2014/texmf-dist/doc/man:$MANPATH"
 export GOROOT="/usr/local/go"
 export GOPATH="$HOME/Documents/gocode"
 
+export EDITOR="vim"
 export VIMHOME="$HOME/.vim"
 
 # Save Ruby gems locally

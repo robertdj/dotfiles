@@ -133,19 +133,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 "  Tab completion
 " ------------------------------------------------------------ 
 
-"See help completion for source,
-"Note: usual completion is on <C-n> but more trouble to press all the time.
-"Never type the same word twice and maybe learn a new spellings!
-"function! Tab_Or_Complete()
-	"if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-		"return "\<C-N>"
-	"else
-		"return "\<Tab>"
-	"endif
-"endfunction
-
-"inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-
 " Tab completion when opening files
 set wildmode=longest,list,full
 set wildmenu

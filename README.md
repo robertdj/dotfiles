@@ -11,17 +11,16 @@ The files are managed using [rcm](https://github.com/thoughtbot/rcm).
 The dotfiles are related to
 
 - BASH
+- Git
 - GNU Screen
 - GNU Stow
-- Git
 - LaTeX
 - R
+- rcrc
 - Ruby gems
+- tmux
 - Vim
 - ZSH
-- rcrc
-- tmux
-
 
 ## Computer specific setup
 
