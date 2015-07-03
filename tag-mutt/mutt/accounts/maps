@@ -1,0 +1,16 @@
+# Other special folders
+set mbox = "+maps/INBOX"
+set postponed = "+maps/Drafts"
+
+# msmtp -----------------------------------
+set from = "maps@dahl-jacobsen.dk"
+set sendmail = "/usr/local/bin/msmtp -a maps"
+set sendmail_wait = 0
+unset record
+
+color status cyan default
+
+macro index D \
+    "<save-message>+maps/Trash<enter>" \
+    "move message to the trash"
+

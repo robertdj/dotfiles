@@ -15,6 +15,7 @@ The dotfiles are related to
 - GNU Screen
 - GNU Stow
 - LaTeX
+- Mutt
 - R
 - rcrc
 - Ruby gems
