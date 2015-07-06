@@ -1,7 +1,7 @@
 [general]
 ui = ttyui
 accounts = math,maps
-pythonfile=~/.mutt/offlineimap.py
+pythonfile=~/.offlineimap.py
 fsync = False
 
 [Account maps]
