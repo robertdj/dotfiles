@@ -37,6 +37,7 @@ Plugin 'tyok/nerdtree-ack'
 
 " Control how to paste
 Plugin 'vim-scripts/UnconditionalPaste'
+Plugin 'vim-scripts/yankstack'
 
 " Tab for completion
 Plugin 'ervandew/supertab'
@@ -58,6 +59,9 @@ Bundle 'christoomey/vim-tmux-navigator'
 
 " Visualize undo tree
 Bundle 'sjl/gundo.vim'
+
+" Modern moving commands
+Bundle 'matze/vim-move'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
