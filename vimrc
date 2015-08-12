@@ -18,11 +18,14 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
-" Run scripts within Vim
-Plugin 'thinca/vim-quickrun'
+" Asymptote syntax highligthing
+Bundle 'hura/vim-asymptote'
 
 " Vim-latex plugin
 Plugin 'robertdj/vim-latex'
+
+" Run scripts within Vim
+Plugin 'thinca/vim-quickrun'
 
 " Match tags in HTML
 Plugin 'Valloric/MatchTagAlways'
@@ -58,10 +61,13 @@ Plugin 'JuliaLang/julia-vim'
 Bundle 'christoomey/vim-tmux-navigator'
 
 " Visualize undo tree
-Bundle 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'
 
 " Modern moving commands
-Bundle 'matze/vim-move'
+Plugin 'matze/vim-move'
+
+" Support for Go
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -118,9 +124,6 @@ set smartindent
 " Save file as sudo with "w!!"
 cmap w!! w !sudo tee % >/dev/null
 
-" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
-filetype plugin on
-
 " Search for file templates by matching the extension
 autocmd BufNewFIle * silent! 0r $VIMHOME/templates/%:e.tpl
 
@@ -131,6 +134,9 @@ let g:vim_markdown_folding_disabled=1
 " Found at
 " http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Don't wrap mail messages
+autocmd Filetype mail setlocal textwidth=0
 
 
 " ------------------------------------------------------------ 
