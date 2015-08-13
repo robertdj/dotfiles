@@ -15,17 +15,20 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Markdown
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'godlygeek/tabular'
 
 " Asymptote syntax highligthing
 Bundle 'hura/vim-asymptote'
 
 " Vim-latex plugin
 Plugin 'robertdj/vim-latex'
+" Remap 'jump to next placeholder' in vim-latex to use C-j with vim-tmux-navigator
+imap <C-n> <Plug>IMAP_JumpForward
+nmap <C-n> <Plug>IMAP_JumpForward
 
-" Run scripts within Vim
-Plugin 'thinca/vim-quickrun'
+" Support for Go
+Plugin 'fatih/vim-go'
 
 " Match tags in HTML
 Plugin 'Valloric/MatchTagAlways'
@@ -33,14 +36,20 @@ Plugin 'Valloric/MatchTagAlways'
 " Commenting code
 Plugin 'scrooloose/nerdcommenter'
 
+" Run scripts within Vim
+Plugin 'thinca/vim-quickrun'
+nmap <silent> <F4> :QuickRun<CR>
+
 " File browser in Vim: NERDtree
 Plugin 'scrooloose/nerdtree'
 Plugin 'tyok/ack.vim'
 Plugin 'tyok/nerdtree-ack'
+nmap <silent> <F3> :NERDTreeToggle<CR>
 
 " Control how to paste
 Plugin 'vim-scripts/UnconditionalPaste'
-Plugin 'vim-scripts/yankstack'
+Plugin 'vim-scripts/YankRing.vim'
+nnoremap <silent> <F10> :YRShow<CR> 
 
 " Tab for completion
 Plugin 'ervandew/supertab'
@@ -52,7 +61,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-speeddating'
 
 " Integration with R
-"Plugin 'vim-scripts/Vim-R-plugin'
+Plugin 'vim-scripts/Vim-R-plugin'
 
 " Support Julia syntax
 Plugin 'JuliaLang/julia-vim'
@@ -62,12 +71,10 @@ Bundle 'christoomey/vim-tmux-navigator'
 
 " Visualize undo tree
 Plugin 'sjl/gundo.vim'
+nnoremap <F5> :GundoToggle<CR>
 
 " Modern moving commands
 Plugin 'matze/vim-move'
-
-" Support for Go
-Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -165,17 +172,4 @@ vnoremap ½ $
 " Match bracket pairs with TAB
 nnoremap <tab> %
 vnoremap <tab> %
-
-" Activate NERDTree with F3
-nmap <silent> <F3> :NERDTreeToggle<CR>
-
-" Quickrun with F4
-nmap <silent> <F4> :QuickRun<CR>
-
-" Gundo with F5
-nnoremap <F5> :GundoToggle<CR>
-
-" Remap 'jump to next placeholder' in vim-latex to use C-j with vim-tmux-navigator
-imap <C-n> <Plug>IMAP_JumpForward
-nmap <C-n> <Plug>IMAP_JumpForward
 
