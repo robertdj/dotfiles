@@ -74,7 +74,14 @@ Plugin 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
 
 " Modern moving commands
-Plugin 'matze/vim-move'
+Plugin 'matze/vim-move'"{{{
+let g:move_map_keys = 0
+
+vmap j <Plug>MoveBlockDown
+vmap k <Plug>MoveBlockUp
+nmap j <Plug>MoveLineDown
+nmap k <Plug>MoveLineUp
+"}}}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
