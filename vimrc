@@ -23,6 +23,7 @@ Bundle 'hura/vim-asymptote'
 
 " Vim-latex plugin
 Plugin 'robertdj/vim-latex'
+let g:tex_flavor='latex'
 " Remap 'jump to next placeholder' in vim-latex to use C-j with vim-tmux-navigator
 imap <C-n> <Plug>IMAP_JumpForward
 nmap <C-n> <Plug>IMAP_JumpForward
@@ -49,6 +50,9 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 " Control how to paste
 Plugin 'vim-scripts/UnconditionalPaste'
 Plugin 'vim-scripts/YankRing.vim'
+" Disable cycling through paste ring
+let g:yankring_replace_n_pkey = 0
+let g:yankring_replace_n_nkey = 0
 nnoremap <silent> <F10> :YRShow<CR> 
 
 " Tab for completion

@@ -1,5 +1,5 @@
-alias mvim='/Applications/MacVim.app/Contents/MacOS/vim'
+alias vim='/Applications/MacVim.app/Contents/MacOS/vim'
 
-alias ll='ls -lhG'
+alias ll='ls -ohG'
 alias la='ll -A'
 
