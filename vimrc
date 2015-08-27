@@ -65,7 +65,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-speeddating'
 
 " Integration with R
-Plugin 'vim-scripts/Vim-R-plugin'
+Plugin 'jalvesaq/R-Vim-runtime'
 
 " Support Julia syntax
 Plugin 'JuliaLang/julia-vim'
