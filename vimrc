@@ -35,7 +35,7 @@ Plugin 'fatih/vim-go'
 Plugin 'Valloric/MatchTagAlways'
 
 " Commenting code
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-commentary'
 
 " Run scripts within Vim
 Plugin 'thinca/vim-quickrun'
@@ -86,6 +86,16 @@ vmap k <Plug>MoveBlockUp
 nmap j <Plug>MoveLineDown
 nmap k <Plug>MoveLineUp
 "}}}
+
+" Better Vim motion
+Plugin 'easymotion/vim-easymotion'
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
+" Open file
+Plugin 'wincent/command-t'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
