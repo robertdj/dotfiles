@@ -94,8 +94,15 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
-" Open file
+" Open files
 Plugin 'wincent/command-t'
+
+" Better status line
+Plugin 'tpope/vim-flagship'
+set laststatus=2
+set showtabline=1
+set guioptions-=e
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
