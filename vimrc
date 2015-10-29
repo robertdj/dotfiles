@@ -69,6 +69,7 @@ Plugin 'jalvesaq/R-Vim-runtime'
 
 " Support Julia syntax
 Plugin 'JuliaLang/julia-vim'
+autocmd Filetype julia setlocal textwidth=72
 
 " Integration with tmux
 Bundle 'christoomey/vim-tmux-navigator'
