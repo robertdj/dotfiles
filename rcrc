@@ -2,4 +2,4 @@ DOTFILES_DIRS="$HOME/Documents/dotfiles"
 
 EXCLUDES="README.md"
 
-SYMLINK_DIRS="vim zsh mutt"
+SYMLINK_DIRS="vim zsh mutt tmuxinator"
