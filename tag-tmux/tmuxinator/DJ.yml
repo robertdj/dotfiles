@@ -1,0 +1,8 @@
+name: DJ
+root: ~/Documents/dahl-jacobsen
+
+windows:
+  - DJ: git status
+  - editor: #vim
+  - tips: #
+

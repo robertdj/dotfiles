@@ -45,6 +45,11 @@ I use further tagging to manage
 - A `tag` for Mutt.
 
 
+## tmux
+
+I use the Ruby gem [tmuxinator](https://github.com/tmuxinator/tmuxinator) for tmux templates.
+
+
 ## Vim
 
 My one & only editor is Vim and I manage plugins with [Vundle](https://github.com/gmarik/Vundle.vim).
