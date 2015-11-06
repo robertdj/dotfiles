@@ -42,7 +42,8 @@ I use further tagging to manage
 
 - Latex: [tikz2pdf](https://github.com/robertdj/tikz2pdf) and [latexmk](http://ctan.org/pkg/latexmk).
 - Computing tools: [Julia](http://julialang.org), [R](http://www.r-project.org) and [INLA](http://www.r-inla.org).
-- A `tag` for Mutt.
+- [Mutt](http://www.mutt.org).
+- [tmux](https://tmux.github.io).
 
 
 ## tmux
