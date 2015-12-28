@@ -5,83 +5,82 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=$VIMHOME/bundle/Vundle.vim
-call vundle#begin()
+" vim-plug
+call plug#begin('~/.vim/plugged')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plug 'gmarik/Vundle.vim'
 
 " Markdown
-Plugin 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled=1
 
 " Arrange tabular text
-Plugin 'godlygeek/tabular'
-Plugin 'junegunn/vim-easy-align'
+Plug 'godlygeek/tabular'
+Plug 'junegunn/vim-easy-align'
 
 " Asymptote syntax highligthing
-Bundle 'hura/vim-asymptote'
+Plug 'hura/vim-asymptote'
 
 " Vim-latex plugin
-Plugin 'robertdj/vim-latex'
+Plug 'robertdj/vim-latex'
 let g:tex_flavor='latex'
 " Remap 'jump to next placeholder' in vim-latex to use C-j with vim-tmux-navigator
 imap <C-n> <Plug>IMAP_JumpForward
 nmap <C-n> <Plug>IMAP_JumpForward
 
 " Support for Go
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
 " Match tags in HTML
-Plugin 'Valloric/MatchTagAlways'
+Plug 'Valloric/MatchTagAlways'
 
 " Commenting code
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 
 " Run scripts within Vim
-Plugin 'thinca/vim-quickrun'
+Plug 'thinca/vim-quickrun'
 nmap <silent> <F4> :QuickRun<CR>
 
 " File browser in Vim: NERDtree
-Plugin 'scrooloose/nerdtree'
-Plugin 'tyok/ack.vim'
-Plugin 'tyok/nerdtree-ack'
+Plug 'scrooloose/nerdtree'
+Plug 'tyok/ack.vim'
+Plug 'tyok/nerdtree-ack'
 nmap <silent> <F3> :NERDTreeToggle<CR>
 
 " Control how to paste
-Plugin 'vim-scripts/UnconditionalPaste'
-Plugin 'vim-scripts/YankRing.vim'
+Plug 'vim-scripts/UnconditionalPaste'
+Plug 'vim-scripts/YankRing.vim'
 " Disable cycling through paste ring
 let g:yankring_replace_n_pkey = 0
 let g:yankring_replace_n_nkey = 0
 nnoremap <silent> <F10> :YRShow<CR> 
 
 " Tab for completion
-Plugin 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 " Chance surrounding symbols
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Interpret Unix style date correctly
-Plugin 'tpope/vim-speeddating'
+Plug 'tpope/vim-speeddating'
 
 " Integration with R
-Plugin 'jalvesaq/R-Vim-runtime'
+Plug 'jalvesaq/R-Vim-runtime'
 
 " Support Julia syntax
-Plugin 'JuliaLang/julia-vim'
+Plug 'JuliaLang/julia-vim'
 autocmd Filetype julia setlocal textwidth=72
 
 " Integration with tmux
-Bundle 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Visualize undo tree
-Plugin 'sjl/gundo.vim'
+Plug 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
 
 " Modern moving commands
-Plugin 'matze/vim-move'"{{{
+Plug 'matze/vim-move'"{{{
 let g:move_map_keys = 0
 
 vmap j <Plug>MoveBlockDown
@@ -91,17 +90,18 @@ nmap k <Plug>MoveLineUp
 "}}}
 
 " Better Vim motion
-Plugin 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
-" Open files
-Plugin 'wincent/command-t'
+" Fuzzy file searching
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Better status line
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 set laststatus=2
 " let g:airline_theme = 'wombat'
 let g:airline_powerline_fonts = 1
@@ -119,11 +119,7 @@ let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.whitespace = 'Ξ'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+call plug#end()
 
 
 " ------------------------------------------------------------ 

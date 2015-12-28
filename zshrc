@@ -58,3 +58,8 @@ source ~/.zsh/compdump.zsh
 autoload -U compinit
 compinit -i -d "${ZSH_COMPDUMP}"
 
+
+# ------------------------------------------------------------ 
+# Fuzzy finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

@@ -53,8 +53,8 @@ I use the Ruby gem [tmuxinator](https://github.com/tmuxinator/tmuxinator) for tm
 
 ## Vim
 
-My one & only editor is Vim and I manage plugins with [Vundle](https://github.com/gmarik/Vundle.vim).
-On a fresh install/new user Vundle has to be installed and the plugins have to be downloaded and installed.
+My one & only editor is Vim and I manage plugins with [vim-plug](https://github.com/junegunn/vim-plug).
+On a fresh install/new user vim-plug has to be installed and the plugins have to be downloaded and installed.
 As illustrated on the Thoughbots [webpage](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos), this can be accomplished with a hook.
 
 The `.vim` directory is symlinked on the top level (as specified in the `rcrc` file).

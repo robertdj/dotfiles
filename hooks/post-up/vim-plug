@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
+	curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
+vim -u $HOME/.vimrc +PlugInstall +qa
+
+exit 0
+
