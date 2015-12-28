@@ -8,15 +8,17 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=$VIMHOME/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
 " Markdown
 Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled=1
+
+" Arrange tabular text
 Plugin 'godlygeek/tabular'
+Plugin 'junegunn/vim-easy-align'
 
 " Asymptote syntax highligthing
 Bundle 'hura/vim-asymptote'
@@ -99,11 +101,23 @@ map  N <Plug>(easymotion-prev)
 Plugin 'wincent/command-t'
 
 " Better status line
-Plugin 'tpope/vim-flagship'
+Plugin 'bling/vim-airline'
 set laststatus=2
-set showtabline=1
-set guioptions-=e
+" let g:airline_theme = 'wombat'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.whitespace = 'Ξ'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -145,8 +159,9 @@ syntax on
 " Make backspace work like most other apps
 set backspace=2 
 
-" make current line underlined
-set cursorline
+" Highlight current line (number)
+" set cursorline
+hi CursorLineNR cterm=NONE ctermbg=black ctermfg=white
 
 " Shortcut for turning on paste mode (:set paste)
 set pastetoggle=<C-p>
@@ -160,11 +175,13 @@ set smartindent
 " Save file as sudo with "w!!"
 cmap w!! w !sudo tee % >/dev/null
 
+" Source the vimrc file after saving it (from vimcasts.org)
+if has("autocmd")
+	autocmd! bufwritepost ~/.vimrc source $MYVIMRC
+endif
+
 " Search for file templates by matching the extension
 autocmd BufNewFIle * silent! 0r $VIMHOME/templates/%:e.tpl
-
-" Options for vim-markdown
-let g:vim_markdown_folding_disabled=1
 
 " Wrap Git commit messages to 72 columns
 " Found at
@@ -173,11 +190,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Don't wrap mail messages
 autocmd Filetype mail setlocal textwidth=0
-
-
-" ------------------------------------------------------------ 
-"  Tab completion
-" ------------------------------------------------------------ 
 
 " Tab completion when opening files
 set wildmode=longest,list,full
