@@ -18,3 +18,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Add to PATH: Latex, Anaconda's Python, Ruby gems
 export PATH="$HOME/.gems/bin:/usr/local/texlive/2015/bin/x86_64-linux:/usr/local/anaconda/bin:$PATH"
 
+# Needed for the Vim plugin YouCompleteMe
+export DYLD_FORCE_FLAT_NAMESPACE=1
+

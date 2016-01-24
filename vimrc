@@ -1,15 +1,19 @@
 " ------------------------------------------------------------ 
-"  Vundle
+"  Plugins
 " ------------------------------------------------------------ 
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plug 'gmarik/Vundle.vim'
+" File browser in Vim: NERDtree
+Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' } | Plug 'tyok/nerdtree-ack' , { 'on': 'NERDTreeToggle' }
+nmap <silent> <F3> :NERDTreeToggle<CR>
+
+" Search using Ack or the silver searcher
+Plug 'tyok/ack.vim'
+Plug 'rking/ag.vim'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
@@ -42,12 +46,6 @@ Plug 'tpope/vim-commentary'
 Plug 'thinca/vim-quickrun'
 nmap <silent> <F4> :QuickRun<CR>
 
-" File browser in Vim: NERDtree
-Plug 'scrooloose/nerdtree'
-Plug 'tyok/ack.vim'
-Plug 'tyok/nerdtree-ack'
-nmap <silent> <F3> :NERDTreeToggle<CR>
-
 " Control how to paste
 Plug 'vim-scripts/UnconditionalPaste'
 Plug 'vim-scripts/YankRing.vim'
@@ -55,9 +53,6 @@ Plug 'vim-scripts/YankRing.vim'
 let g:yankring_replace_n_pkey = 0
 let g:yankring_replace_n_nkey = 0
 nnoremap <silent> <F10> :YRShow<CR> 
-
-" Tab for completion
-Plug 'ervandew/supertab'
 
 " Chance surrounding symbols
 Plug 'tpope/vim-surround'
@@ -72,11 +67,17 @@ Plug 'jalvesaq/R-Vim-runtime'
 Plug 'JuliaLang/julia-vim'
 autocmd Filetype julia setlocal textwidth=72
 
+" Autocompletion 
+Plug 'Valloric/YouCompleteMe'
+
+" Tab for completion
+Plug 'ervandew/supertab'
+
 " Integration with tmux
 Plug 'christoomey/vim-tmux-navigator'
 
 " Visualize undo tree
-Plug 'sjl/gundo.vim'
+Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
 nnoremap <F5> :GundoToggle<CR>
 
 " Modern moving commands
@@ -96,6 +97,10 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
+" Search with incremental highligts
+" Plug 'haya14busa/incsearch.vim'
+" Plug 'haya14busa/incsearch-easymotion.vim'
+
 " Fuzzy file searching
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -103,7 +108,6 @@ Plug 'junegunn/fzf.vim'
 " Better status line
 Plug 'bling/vim-airline'
 set laststatus=2
-" let g:airline_theme = 'wombat'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
