@@ -4,6 +4,7 @@ set postponed = "+math/Drafts"
 
 # msmtp -----------------------------------
 set from = "robert@math.aau.dk"
+set realname = "Robert Dahl Jacobsen"
 set sendmail = "/usr/local/bin/msmtp -a math"
 set sendmail_wait = 0
 set record=+math/"Sent Items"

@@ -4,6 +4,7 @@ set postponed = "+maps/Drafts"
 
 # msmtp -----------------------------------
 set from = "maps@dahl-jacobsen.dk"
+set realname = "Robert DJ"
 set sendmail = "/usr/local/bin/msmtp -a maps"
 set sendmail_wait = 0
 set record = "+maps/Sent"
