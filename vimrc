@@ -85,16 +85,6 @@ autocmd Filetype julia setlocal textwidth=72
 
 " Autocompletion 
 Plug 'ervandew/supertab'
-" Plug 'Valloric/YouCompleteMe'
-
-" let g:ycm_autoclose_preview_window_after_completion = 1
-" let g:ycm_min_num_identifier_candidate_chars = 4
-" let g:ycm_filetype_blacklist = { }
-" let g:ycm_filetype_specific_completion_to_disable = {
-"       \ 'gitcommit': 1,
-"       \ 'markdown': 1,
-"       \ 'text': 1
-"       \}
 
 " Integration with tmux
 Plug 'christoomey/vim-tmux-navigator'
