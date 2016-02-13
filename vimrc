@@ -13,11 +13,27 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 
 " Search using Ack or the silver searcher
 Plug 'tyok/ack.vim'
-Plug 'rking/ag.vim'
+
+if executable('ag')
+  let g:ackprg = "ag --nocolor --nogroup --column"
+elseif executable('ack-grep')
+  let g:ackprg = "ack-grep --nocolor --nogroup --column"
+elseif executable('ack')
+  let g:ackprg = "ack --nocolor --nogroup --column"
+endif
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled=1
+Plug 'greyblake/vim-preview' " <Leader>P to preview
+
+" This forces vim-preview to use the default browser on linux; it already uses
+" 'open' on Mac.
+if has("unix")
+  let g:PreviewBrowsers = "xdg-open"
+endif
+
+let g:PreviewMarkdownFences = 1
 
 " Arrange tabular text
 Plug 'godlygeek/tabular'
@@ -68,10 +84,17 @@ Plug 'JuliaLang/julia-vim'
 autocmd Filetype julia setlocal textwidth=72
 
 " Autocompletion 
-Plug 'Valloric/YouCompleteMe'
-
-" Tab for completion
 Plug 'ervandew/supertab'
+" Plug 'Valloric/YouCompleteMe'
+
+" let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_min_num_identifier_candidate_chars = 4
+" let g:ycm_filetype_blacklist = { }
+" let g:ycm_filetype_specific_completion_to_disable = {
+"       \ 'gitcommit': 1,
+"       \ 'markdown': 1,
+"       \ 'text': 1
+"       \}
 
 " Integration with tmux
 Plug 'christoomey/vim-tmux-navigator'
@@ -96,10 +119,6 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
-
-" Search with incremental highligts
-" Plug 'haya14busa/incsearch.vim'
-" Plug 'haya14busa/incsearch-easymotion.vim'
 
 " Fuzzy file searching
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -164,7 +183,7 @@ set backspace=2
 hi CursorLineNR cterm=NONE ctermbg=black ctermfg=white
 
 " Shortcut for turning on paste mode (:set paste)
-set pastetoggle=<C-p>
+set pastetoggle=<F7>
 
 " Indentation
 set tabstop=4
