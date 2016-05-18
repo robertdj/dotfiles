@@ -1,1 +1,2 @@
-options(repos = "http://cran.dk.r-project.org")
+#options(repos = "http://cran.dk.r-project.org")
+options(repos = "https://cloud.r-project.org")

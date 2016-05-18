@@ -113,6 +113,7 @@ map  N <Plug>(easymotion-prev)
 " Fuzzy file searching
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+nmap <Leader>t :Files<CR>
 
 " Better status line
 Plug 'bling/vim-airline'
