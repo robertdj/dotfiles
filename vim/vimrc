@@ -103,12 +103,9 @@ nmap j <Plug>MoveLineDown
 nmap k <Plug>MoveLineUp
 "}}}
 
-" Better Vim motion
-Plug 'easymotion/vim-easymotion'
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
+" Better searching in buffer
+Plug 'junegunn/vim-pseudocl'
+Plug 'junegunn/vim-oblique'
 
 " Fuzzy file searching
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
