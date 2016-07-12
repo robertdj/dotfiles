@@ -111,6 +111,7 @@ Plug 'junegunn/vim-oblique'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 nmap <Leader>t :Files<CR>
+nmap <Leader>b :Buffers<CR>
 
 " Better status line
 Plug 'bling/vim-airline'
@@ -171,7 +172,7 @@ set backspace=2
 hi CursorLineNR cterm=NONE ctermbg=black ctermfg=white
 
 " Shortcut for turning on paste mode (:set paste)
-set pastetoggle=<F7>
+set pastetoggle=<F12>
 
 " Indentation
 set tabstop=4
