@@ -80,7 +80,7 @@ Plug 'tpope/vim-speeddating'
 Plug 'jalvesaq/R-Vim-runtime'
 
 " Support Julia syntax
-Plug 'JuliaLang/julia-vim'
+Plug 'JuliaEditorSupport/julia-vim'
 autocmd Filetype julia setlocal textwidth=72
 
 " Autocompletion 
