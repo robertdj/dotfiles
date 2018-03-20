@@ -1,15 +1,18 @@
-# Sidebar Patch ------------------------------------------
+# ------------------------------------------------------------------------------
+# Sidebar Patch 
 set sidebar_delim   = '  │'
 set sidebar_visible = yes
 set sidebar_width   = 24
 
 
-# Status Bar ---------------------------------------------
+# ------------------------------------------------------------------------------
+# Status Bar 
 set status_chars  = " *%A"
 set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
 
 
-# Index View Options ---------------------------------
+# ------------------------------------------------------------------------------
+# Index View Options 
 set date_format = "%Y-%m-%d"
 set index_format = "[%Z]  %D  %-20.20F  %s"
 set sort_aux = reverse-last-date-received  # like gmail
@@ -18,7 +21,8 @@ set sort_re                                # thread based on regex
 set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 
 
-# Pager View Options ---------------------------------
+# ------------------------------------------------------------------------------
+# Pager View Options 
 set pager_index_lines = 10 # number of index lines to show
 set pager_context = 3      # number of context lines to show
 set pager_stop             # don't go to next message automatically
@@ -29,21 +33,24 @@ unset markers              # no ugly plus signs
 set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
 
 
-# Paths --------------------------------------------------
+# ------------------------------------------------------------------------------
+# Paths 
 set folder = ~/mail
 set tmpdir = /tmp
 set mailcap_path = ~/.mutt/mailcap
 source ~/.mutt/keybindings
 
 
-# Header Options -----------------------------------------
+# ------------------------------------------------------------------------------
+# Header Options 
 ignore *                                # ignore all headers
 unignore from: to: cc: date: subject:   # show only these
 unhdr_order *                           # some distros order things by default
 hdr_order from: to: cc: date: subject:  # and in this order
 
 
-# Basic options ------------------------------------------
+# ------------------------------------------------------------------------------
+# Basic options 
 set wait_key = no
 set mbox_type = Maildir
 set timeout = 3
@@ -52,26 +59,27 @@ set mail_check = 0
 set editor = "vim"
 
 
-# Incoming mail ------------------------------------------
+# ------------------------------------------------------------------------------
+# Incoming mail 
 
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
 
-# Account settings -----------------------------------
+# ------------------------------------------------------------------------------
+# Account settings 
 #
 # Default inbox
-set spoolfile = "+math/INBOX"
+set spoolfile = "+robert/Inbox"
 
 # Mailboxes to show in the sidebar
-mailboxes "+-- math --------------" \
-			  +math/INBOX \
-			  "+-- maps --------------" \
-			  +maps/INBOX \
+mailboxes "+-- robert --------------" \
+			  +robert/Inbox \
+		  "+-- maps --------------" \
+			  +maps/Inbox \
 			  +temporary/search
 
 
+folder-hook robert/*   source ~/.mutt/accounts/robert
 folder-hook maps/*   source ~/.mutt/accounts/maps
-folder-hook math/*   source ~/.mutt/accounts/math
-
 
