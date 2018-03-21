@@ -1,5 +1,6 @@
 # ------------------------------------------------------------------------------
 # Sidebar Navigation 
+
 bind index,pager <down>   sidebar-next
 bind index,pager <up>     sidebar-prev
 bind index,pager <right>  sidebar-open
@@ -10,6 +11,7 @@ macro pager b "<enter-command>toggle sidebar_visible<enter>"
 
 # ------------------------------------------------------------------------------
 # Index key bindings 
+
 bind index gg first-entry
 bind index G last-entry
 
@@ -21,6 +23,7 @@ macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "ma
 
 # ------------------------------------------------------------------------------
 # Pager Key Bindings 
+
 bind pager k  previous-line
 bind pager j  next-line
 bind pager gg top
@@ -29,13 +32,15 @@ bind pager G  bottom
 bind pager R  group-reply
 
 macro pager \Cu <pipe-entry>'urlview'<enter> "call urlview to open links"
-#macro pager \Cu "|urlview<enter>" "call urlview to open links"
 
 
 # ------------------------------------------------------------------------------
 # Sync email
-macro index O "<shell-escape>mbsync robert maps<enter>"             "run mbsync to sync all mail"
-macro index o "<shell-escape>mbsync robert-inbox maps-inbox<enter>" "run mbsync to sync inbox"
+
+macro index O "<shell-escape>mbsync robert maps && mu index --maildir=~/mail<enter>" \
+	"run mbsync to sync all mail"
+macro index o "<shell-escape>mbsync robert-inbox maps-inbox<enter>" \
+	"run mbsync to sync inbox"
 
 
 # Press p to move a newly crafted message to the drafts folder
