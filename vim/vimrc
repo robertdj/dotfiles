@@ -33,8 +33,10 @@ let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled=1
 
 " Vim-latex plugin
-Plug 'robertdj/vim-latex'
+Plug 'vim-latex/vim-latex'
 let g:tex_flavor='latex'
+let g:tex_conceal=""
+let g:Tex_Folding=0
 " Remap 'jump to next placeholder' in vim-latex to use C-j with vim-tmux-navigator
 imap <C-n> <Plug>IMAP_JumpForward
 nmap <C-n> <Plug>IMAP_JumpForward
