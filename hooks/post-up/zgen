@@ -2,15 +2,15 @@
 
 CurrentDir=$(pwd)
 
-RUNDIR=$(cd $(dirname $0) ; pwd -P)
-cd $RUNDIR
+# RUNDIR=$(cd $(dirname $0) ; pwd -P)
+# cd $RUNDIR
 
 # Make sure zgen submodule is present and updated
-if [ -z "$(ls $HOME/.zsh/zgen)" ]; then
-	git submodule init
+if [ -z "$(ls $HOME/.zgen)" ]; then
+	git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 fi
 
-git submodule update
+# git submodule update
 
 cat <<- _EOF_
 

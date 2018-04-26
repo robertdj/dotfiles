@@ -1,3 +1,3 @@
 alias ll='ls -l --human-readable --color'
-alias la='ll -A'
+alias la='ll --almost-all'
 
