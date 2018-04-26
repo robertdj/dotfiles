@@ -73,7 +73,13 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-speeddating'
 
 " Integration with R
-Plug 'jalvesaq/R-Vim-runtime'
+Plug 'jalvesaq/Nvim-R'
+set <M-->=-
+let R_assign_map = '<M-->'
+tnoremap <C-h> <C-w>h
+tnoremap <C-j> <C-w>j
+tnoremap <C-k> <C-w>k
+tnoremap <C-l> <C-w>l
 
 " Support Julia syntax
 Plug 'JuliaEditorSupport/julia-vim'
