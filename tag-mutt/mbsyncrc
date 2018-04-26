@@ -1,0 +1,73 @@
+Create Both
+# Expunge Both
+# SyncState *
+
+# ------------------------------------------------------------------------------
+# maps
+
+IMAPAccount maps
+Host imap.one.com
+User maps@dahl-jacobsen.dk
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.mutt/accounts/maps.gpg"
+SSLType IMAPS
+SSLVersions TLSv1.2
+AuthMechs LOGIN
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# Remote storage
+IMAPStore maps-remote
+Account maps
+
+# Local storage
+MaildirStore maps-local
+SubFolders Verbatim
+Path ~/mail/maps/
+Inbox ~/mail/maps/Inbox
+
+Channel maps
+Master :maps-remote:
+Slave :maps-local:
+Patterns *
+Sync All
+
+Channel maps-inbox
+Master :maps-remote:
+Slave :maps-local:
+Patterns "INBOX"
+Sync Pull
+
+
+# ------------------------------------------------------------------------------
+# robert
+
+IMAPAccount robert
+Host imap.one.com
+User robert@dahl-jacobsen.dk
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.mutt/accounts/robert.gpg"
+SSLType IMAPS
+SSLVersions TLSv1.2
+AuthMechs LOGIN
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# Remote storage
+IMAPStore robert-remote
+Account robert
+
+# Local storage
+MaildirStore robert-local
+SubFolders Verbatim
+Path ~/mail/robert/
+Inbox ~/mail/robert/Inbox
+
+Channel robert
+Master :robert-remote:
+Slave :robert-local:
+Patterns *
+Sync All
+
+Channel robert-inbox
+Master :robert-remote:
+Slave :robert-local:
+Patterns "INBOX"
+Sync Pull
+
