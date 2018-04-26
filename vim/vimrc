@@ -32,9 +32,6 @@ Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled=1
 
-" Asymptote syntax highligthing
-Plug 'hura/vim-asymptote'
-
 " Vim-latex plugin
 Plug 'robertdj/vim-latex'
 let g:tex_flavor='latex'
