@@ -1,5 +1,6 @@
 # ------------------------------------------------------------------------------
 # Sidebar Patch 
+
 set sidebar_delim   = '  │'
 set sidebar_visible = yes
 set sidebar_width   = 24
@@ -7,12 +8,14 @@ set sidebar_width   = 24
 
 # ------------------------------------------------------------------------------
 # Status Bar 
+
 set status_chars  = " *%A"
 set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
 
 
 # ------------------------------------------------------------------------------
 # Index View Options 
+
 set date_format = "%Y-%m-%d"
 set index_format = "[%Z]  %D  %-20.20F  %s"
 set sort_aux = reverse-last-date-received  # like gmail
@@ -23,6 +26,7 @@ set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 
 # ------------------------------------------------------------------------------
 # Pager View Options 
+
 set pager_index_lines = 10 # number of index lines to show
 set pager_context = 3      # number of context lines to show
 set pager_stop             # don't go to next message automatically
@@ -35,15 +39,16 @@ set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
 
 # ------------------------------------------------------------------------------
 # Paths 
+
 set folder = ~/mail
 set tmpdir = /tmp
 set mailcap_path = ~/.mutt/mailcap
 source ~/.mutt/keybindings
-source ~/.mutt/auto-views
 
 
 # ------------------------------------------------------------------------------
 # Header Options 
+
 ignore *                                # ignore all headers
 unignore from: to: cc: date: subject:   # show only these
 unhdr_order *                           # some distros order things by default
@@ -52,6 +57,7 @@ hdr_order from: to: cc: date: subject:  # and in this order
 
 # ------------------------------------------------------------------------------
 # Basic options 
+
 set wait_key = no
 set mbox_type = Maildir
 set timeout = 3
