@@ -22,22 +22,15 @@ elseif executable('ack')
   let g:ackprg = "ack --nocolor --nogroup --column"
 endif
 
-" Markdown
-Plug 'plasticboy/vim-markdown'
-let g:vim_markdown_folding_disabled=1
-Plug 'greyblake/vim-preview' " <Leader>P to preview
-
-" This forces vim-preview to use the default browser on linux; it already uses
-" 'open' on Mac.
-if has("unix")
-  let g:PreviewBrowsers = "xdg-open"
-endif
-
-let g:PreviewMarkdownFences = 1
-
-" Arrange tabular text
+"" Arrange tabular text
+" Must come before vim-markdown
 Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
+
+" Markdown
+Plug 'plasticboy/vim-markdown'
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_folding_disabled=1
 
 " Asymptote syntax highligthing
 Plug 'hura/vim-asymptote'
