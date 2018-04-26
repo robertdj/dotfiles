@@ -22,29 +22,21 @@ elseif executable('ack')
   let g:ackprg = "ack --nocolor --nogroup --column"
 endif
 
-" Markdown
-Plug 'plasticboy/vim-markdown'
-let g:vim_markdown_folding_disabled=1
-Plug 'greyblake/vim-preview' " <Leader>P to preview
-
-" This forces vim-preview to use the default browser on linux; it already uses
-" 'open' on Mac.
-if has("unix")
-  let g:PreviewBrowsers = "xdg-open"
-endif
-
-let g:PreviewMarkdownFences = 1
-
-" Arrange tabular text
+"" Arrange tabular text
+" Must come before vim-markdown
 Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 
-" Asymptote syntax highligthing
-Plug 'hura/vim-asymptote'
+" Markdown
+Plug 'plasticboy/vim-markdown'
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_folding_disabled=1
 
 " Vim-latex plugin
-Plug 'robertdj/vim-latex'
+Plug 'vim-latex/vim-latex'
 let g:tex_flavor='latex'
+let g:tex_conceal=""
+let g:Tex_Folding=0
 " Remap 'jump to next placeholder' in vim-latex to use C-j with vim-tmux-navigator
 imap <C-n> <Plug>IMAP_JumpForward
 nmap <C-n> <Plug>IMAP_JumpForward
@@ -57,6 +49,10 @@ Plug 'Valloric/MatchTagAlways'
 
 " Commenting code
 Plug 'tpope/vim-commentary'
+
+" Show indentation
+Plug 'Yggdroot/indentLine'
+let g:indentLine_char = '┊'
 
 " Run scripts within Vim
 Plug 'thinca/vim-quickrun'
@@ -77,7 +73,13 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-speeddating'
 
 " Integration with R
-Plug 'jalvesaq/R-Vim-runtime'
+Plug 'jalvesaq/Nvim-R'
+set <M-->=-
+let R_assign_map = '<M-->'
+tnoremap <C-h> <C-w>h
+tnoremap <C-j> <C-w>j
+tnoremap <C-k> <C-w>k
+tnoremap <C-l> <C-w>l
 
 " Support Julia syntax
 Plug 'JuliaEditorSupport/julia-vim'
@@ -154,9 +156,11 @@ set smartcase
 " ------------------------------------------------------------ 
 
 " Line numbers are relative to current line *and* show current line number
-" Requires Vim version >= 7.4
 set number
 set relativenumber
+
+" Disable all conceal
+set conceallevel=0
 
 " Replace globally by default
 set gdefault
