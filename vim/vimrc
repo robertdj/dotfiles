@@ -50,6 +50,10 @@ Plug 'Valloric/MatchTagAlways'
 " Commenting code
 Plug 'tpope/vim-commentary'
 
+" Show indentation
+Plug 'Yggdroot/indentLine'
+let g:indentLine_char = '┊'
+
 " Run scripts within Vim
 Plug 'thinca/vim-quickrun'
 nmap <silent> <F4> :QuickRun<CR>
