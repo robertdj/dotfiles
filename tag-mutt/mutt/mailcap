@@ -1,23 +1,7 @@
 # MS Word documents
-application/msword; ~/.mutt/view_attachment.sh %s "-" '/Applications/TextEdit.app'
-
-# Images
-image/jpg; ~/.mutt/view_attachment.sh %s jpg
-image/jpeg; ~/.mutt/view_attachment.sh %s jpg
-image/pjpeg; ~/.mutt/view_attachment.sh %s jpg
-image/png; ~/.mutt/view_attachment.sh %s png
-image/gif; ~/.mutt/view_attachment.sh %s gif
-
-# PDFs
-application/pdf; ~/.mutt/view_attachment.sh %s pdf
-
-# HTML
-text/html; ~/.mutt/view_attachment.sh %s html
-
-# Unidentified files
-application/octet-stream; ~/.mutt/view_attachment.sh %s "-"
+application/msword; lowriter %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; lowriter %s
 
 # Display html emails inline
-#text/html; elinks -dump -dump-charset iso-8859-15 -default-mime-type text/html %s; needsterminal; copiousoutput;
 text/html; elinks -dump -dump-charset utf8 -default-mime-type text/html %s; needsterminal; copiousoutput;
 

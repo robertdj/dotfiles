@@ -39,6 +39,7 @@ set folder = ~/mail
 set tmpdir = /tmp
 set mailcap_path = ~/.mutt/mailcap
 source ~/.mutt/keybindings
+source ~/.mutt/auto-views
 
 
 # ------------------------------------------------------------------------------
@@ -57,6 +58,7 @@ set timeout = 3
 set mail_check = 0
 
 set editor = "vim"
+# set edit_headers=yes
 
 
 # ------------------------------------------------------------------------------
