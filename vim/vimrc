@@ -156,9 +156,11 @@ set smartcase
 " ------------------------------------------------------------ 
 
 " Line numbers are relative to current line *and* show current line number
-" Requires Vim version >= 7.4
 set number
 set relativenumber
+
+" Disable all conceal
+set conceallevel=0
 
 " Replace globally by default
 set gdefault
