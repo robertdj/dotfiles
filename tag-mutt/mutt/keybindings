@@ -37,10 +37,8 @@ macro pager \Cu <pipe-entry>'urlview'<enter> "call urlview to open links"
 # ------------------------------------------------------------------------------
 # Sync email
 
-macro index O "<shell-escape>mbsync robert maps && mu index --maildir=~/mail<enter>" \
-	"run mbsync to sync all mail"
-macro index o "<shell-escape>mbsync robert-inbox maps-inbox<enter>" \
-	"run mbsync to sync inbox"
+macro index O "<shell-escape>~/.mutt/sync.sh<enter>" 
+macro index o "<shell-escape>mbsync robert-inbox maps-inbox<enter>" "run mbsync to sync inbox"
 
 
 # Press p to move a newly crafted message to the drafts folder
