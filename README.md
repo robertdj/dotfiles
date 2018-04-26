@@ -6,42 +6,37 @@ This is a collection of my dotfiles used on GNU/Linux and Mac OS X.
 The files are managed using [rcm](https://github.com/thoughtbot/rcm).
 
 
-## Contents ##
+## Contents
 
 The dotfiles are related to
 
 - BASH
 - Git
-- GNU Screen
-- GNU Stow
+- Julia
 - LaTeX
 - Mutt
 - R
 - rcrc
-- Ruby gems
 - tmux
 - Vim
 - ZSH
 
+
 ## Computer specific setup
 
-At home I have one Mac and multiple computers with GNU/Linux.
-At work I have a laptop with GNU/Linux and access to (but no administration rights over) servers with GNU/Linux.
-
-Where possible, I use ZSH as my shell and tmux as my terminal multiplexer.
-Alternatively, I use BASH and GNU Screen.
+I have one Mac and multiple computers with GNU/Linux. When possible I use ZSH as my shell and tmux as my terminal multiplexer. Alternatively, I use BASH.
 To manage this, I have the following setup:
 
-- A `host` folder for my Mac.
+- A `tag` folder for my Mac.
 - A `tag` for GNU/Linux.
-- A `tag` for BASH (that also includes the `screenrc`).
+- A `tag` for BASH.
 
 Currently the operating systems only differ in the shell aliases.
 
 I use further tagging to manage
 
 - Latex: [tikz2pdf](https://github.com/robertdj/tikz2pdf) and [latexmk](http://ctan.org/pkg/latexmk).
-- Computing tools: [Julia](http://julialang.org), [R](http://www.r-project.org) and [INLA](http://www.r-inla.org).
+- Computing tools: [Julia](http://julialang.org) and [R](http://www.r-project.org).
 - [Mutt](http://www.mutt.org).
 - [tmux](https://tmux.github.io).
 
