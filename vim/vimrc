@@ -44,6 +44,9 @@ nmap <C-n> <Plug>IMAP_JumpForward
 " Support for Go
 Plug 'fatih/vim-go'
 
+" Support for fish shell
+Plug 'dag/vim-fish'
+
 " Match tags in HTML
 Plug 'Valloric/MatchTagAlways'
 
