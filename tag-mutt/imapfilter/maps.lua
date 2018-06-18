@@ -37,7 +37,9 @@ messages:move_messages(account['Madkasse'])
 messages = inbox:match_from('no-reply@rejsekort.dk')
 messages:move_messages(account['Rejsekort'])
 
-messages = inbox:match_from('noreply@oister.dk')
+messages = 
+	inbox:match_from('noreply@oister.dk') +
+	inbox:match_from('kundeservice@oister.dk')
 messages:move_messages(account['Oister'])
 
 messages = inbox:match_from('julialang@discoursemail.com')
