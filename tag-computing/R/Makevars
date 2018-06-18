@@ -1,0 +1,2 @@
+CFLAGS=-g -O2 -Wall -pedantic
+CXXFLAGS=-g -O2 -Wall -pedantic
