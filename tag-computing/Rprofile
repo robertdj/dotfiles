@@ -1,1 +1,1 @@
-options(repos = "https://cloud.r-project.org")
+options(repos = "https://mran.microsoft.com/snapshot/2018-07-02")
