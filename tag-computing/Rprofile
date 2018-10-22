@@ -1,1 +1,1 @@
-options(repos = "https://mran.microsoft.com/snapshot/2018-07-02", download.file.method = "libcurl")
+options(repos = "https://mran.microsoft.com/snapshot/2018-07-02")
