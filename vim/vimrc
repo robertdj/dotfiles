@@ -185,7 +185,9 @@ set pastetoggle=<F12>
 " Indentation
 set tabstop=4
 set shiftwidth=4
-set noexpandtab " Do not convert tabs to spaces
+"
+" Convert tabs to spaces
+set expandtab 
 set smartindent
 
 " Save file as sudo with "w!!"
