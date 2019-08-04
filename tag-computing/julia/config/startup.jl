@@ -1,5 +1,7 @@
 # Extend path
-push!(LOAD_PATH, homedir() * "/Dropbox/julia")
+push!(LOAD_PATH, homedir() * "/Documents/julia")
+
+using OhMyREPL
 
 ENV["EDITOR"] = "vim"
 
