@@ -9,6 +9,7 @@
 	co = checkout
 	rv = remote -v
 	ba = branch -a
+    l = log --graph
 [push]
 	default = simple
 [difftool "sourcetree"]
