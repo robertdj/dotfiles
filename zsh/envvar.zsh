@@ -4,14 +4,11 @@
 # Color support; needed for vim-airline
 export TERM='xterm-256color'
 
-export INFOPATH="/usr/local/texlive/2017/texmf-dist/doc/info:$INFOPATH"
-export MANPATH="/usr/local/texlive/2017/texmf-dist/doc/man:$MANPATH"
-# export MANPATH="/usr/local/man:$MANPATH"
-
-export PATH=$PATH:/usr/local/go/bin
+export INFOPATH="/usr/local/texlive/2018/texmf-dist/doc/info:$INFOPATH"
+export MANPATH="/usr/local/texlive/2018/texmf-dist/doc/man:$MANPATH"
 
 export EDITOR="vim"
 export VIMHOME="$HOME/.vim"
 
-export PATH="$HOME/bin:$PATH"
-
+export R_HOME="/opt/R/3.6.0/lib/R"
+export LD_LIBRARY_PATH="/opt/R/3.6.0/lib/R/lib:$LD_LIBRARY_PATH"
