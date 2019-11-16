@@ -1,5 +1,5 @@
 [user]
-	name = Robert DJ
+	name = Robert Dahl Jacobsen
 	email = git@dahl-jacobsen.dk
 [core]
 	excludesfile = ~/.gitignore
