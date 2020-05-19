@@ -95,10 +95,6 @@ Plug 'ervandew/supertab'
 " Integration with tmux
 Plug 'christoomey/vim-tmux-navigator'
 
-" Visualize undo tree
-Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
-nnoremap <F5> :GundoToggle<CR>
-
 " Modern moving commands
 Plug 'matze/vim-move'"{{{
 let g:move_map_keys = 0
