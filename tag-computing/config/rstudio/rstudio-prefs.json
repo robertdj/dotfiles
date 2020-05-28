@@ -1,0 +1,39 @@
+{
+    "highlight_selected_line": true,
+    "panes": {
+        "quadrants": [
+            "Source",
+            "TabSet2",
+            "TabSet1",
+            "Console"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Files",
+            "Plots",
+            "Connections",
+            "Help",
+            "Build",
+            "VCS",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Packages",
+            "Viewer"
+        ],
+        "console_left_on_top": false,
+        "console_right_on_top": false
+    },
+    "num_spaces_for_tab": 4,
+    "blinking_cursor": false,
+    "show_invisibles": true,
+    "editor_keybindings": "vim",
+    "scroll_past_end_of_document": true,
+    "save_files_before_build": true,
+    "default_project_location": "~/Documents/R",
+    "wrap_tab_navigation": false,
+    "save_workspace": "never",
+    "remove_history_duplicates": true,
+    "reuse_sessions_for_project_links": true
+}
