@@ -36,7 +36,7 @@ Currently the operating systems only differ in the shell aliases.
 I use further tagging to manage
 
 - Latex: [tikz2pdf](https://github.com/robertdj/tikz2pdf) and [latexmk](http://ctan.org/pkg/latexmk).
-- Computing tools: [Julia](http://julialang.org) and [R](http://www.r-project.org).
+- Computing tools: [Julia](http://julialang.org), [R](http://www.r-project.org) and RStudio. The RStudio preferences can also be used on Windows (in the hidden folder `C:/Users/<user>/AppData/Roaming/RStudio`)
 - [Mutt](http://www.mutt.org).
 - [tmux](https://tmux.github.io).
 
