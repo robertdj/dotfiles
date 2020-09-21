@@ -19,6 +19,7 @@ The dotfiles are related to
 - rcrc
 - tmux
 - Vim
+- VS Code
 - ZSH
 
 
@@ -53,6 +54,11 @@ On a fresh install/new user vim-plug has to be installed and the plugins have to
 As illustrated on the Thoughbots [webpage](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos), this can be accomplished with a hook.
 
 The `.vim` directory is symlinked on the top level (as specified in the `rcrc` file).
+
+
+## VS Code
+
+The settings file can be used across platforms, but the [location depends on the operating system](https://code.visualstudio.com/docs/getstarted/settings).
 
 
 ## ZSH
