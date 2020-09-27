@@ -6,8 +6,7 @@ function fish_prompt
     echo '$ '
 end
 
-# Get DHCP leases from EdgeOS router
-function leases
-	ssh edge "/opt/vyatta/bin/vyatta-op-cmd-wrapper show dhcp leases"
+function fish_user_key_bindings
+    fzf_key_bindings
 end
 
