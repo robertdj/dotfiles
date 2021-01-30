@@ -1,0 +1,10 @@
+{
+    "telemetry.enableTelemetry": false,
+    "julia.executablePath": "/usr/local/bin/julia",
+    "julia.enableTelemetry": true,
+    "window.zoomLevel": 0,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.usePlotPane": true,
+}
