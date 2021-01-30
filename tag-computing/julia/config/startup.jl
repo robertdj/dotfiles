@@ -1,8 +1,6 @@
 # Extend path
 push!(LOAD_PATH, homedir() * "/Documents/julia")
 
-using OhMyREPL
-
 ENV["EDITOR"] = "vim"
 
 # REPL colors
