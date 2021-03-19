@@ -1,6 +1,9 @@
 CC=clang
 CXX=clang++
 CXX11=clang++
+CXX14=clang++
+CXX17=clang++
+CXX20=clang++
 
 CFLAGS=-g -O2 -Wall -pedantic
 CXXFLAGS=-g -O2 -Wall -pedantic
