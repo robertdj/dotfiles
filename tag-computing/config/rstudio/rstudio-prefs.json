@@ -40,5 +40,6 @@
     "reuse_sessions_for_project_links": true,
     "margin_column": 100,
     "posix_terminal_shell": "bash",
-    "load_workspace": false
+    "load_workspace": false,
+    "line_ending_conversion": "posix"
 }
