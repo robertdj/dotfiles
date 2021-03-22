@@ -41,5 +41,8 @@
     "margin_column": 100,
     "posix_terminal_shell": "bash",
     "load_workspace": false,
-    "line_ending_conversion": "posix"
+    "line_ending_conversion": "posix",
+    "highlight_r_function_calls": true,
+    "initial_working_directory": "~",
+    "rainbow_parentheses": true
 }
