@@ -40,6 +40,7 @@ My computing tools are [Julia](http://julialang.org) and [R](http://www.r-projec
 RStudio's preferences can also be used on Windows in the hidden folder `C:/Users/<user>/AppData/Roaming/RStudio`.
 
 I sometimes use [VS Code](https://code.visualstudio.com) as an IDE for Julia with the [Julia for VS Code](https://www.julia-vscode.org) extension.
+VS Code's configs can also be used on Windows/Mac -- check out [its docs](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations).
 
 
 ## Fish tag
