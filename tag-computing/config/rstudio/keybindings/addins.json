@@ -1,0 +1,4 @@
+{
+    "targets::rstudio_addin_tar_load": "Ctrl+Alt+K",
+    "breakerofchains::break_chain": "Ctrl+Shift+B"
+}

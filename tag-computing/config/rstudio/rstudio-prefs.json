@@ -44,5 +44,6 @@
     "line_ending_conversion": "posix",
     "highlight_r_function_calls": true,
     "initial_working_directory": "~",
-    "rainbow_parentheses": true
+    "rainbow_parentheses": true,
+    "document_author": "Robert Dahl Jacobsen"
 }
