@@ -2,11 +2,14 @@
     "telemetry.enableTelemetry": false,
     "julia.executablePath": "/usr/local/bin/julia",
     "julia.enableTelemetry": true,
-    "window.zoomLevel": 1,
     "terminal.integrated.commandsToSkipShell": [
         "language-julia.interrupt"
     ],
     "julia.usePlotPane": true,
     "r.rterm.linux": "/usr/local/bin/R",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "julia.symbolCacheDownload": true,
+    "window.zoomLevel": 1,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vim/vimrc"
 }
