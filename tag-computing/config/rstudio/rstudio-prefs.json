@@ -46,5 +46,6 @@
     "initial_working_directory": "~",
     "rainbow_parentheses": true,
     "document_author": "Robert Dahl Jacobsen",
-    "soft_wrap_r_files": true
+    "soft_wrap_r_files": true,
+    "jobs_tab_visibility": "shown"
 }
