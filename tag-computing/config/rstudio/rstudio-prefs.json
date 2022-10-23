@@ -47,5 +47,7 @@
     "rainbow_parentheses": true,
     "document_author": "Robert Dahl Jacobsen",
     "soft_wrap_r_files": true,
-    "jobs_tab_visibility": "shown"
+    "jobs_tab_visibility": "shown",
+    "new_proj_git_init": true,
+    "insert_native_pipe_operator": true
 }
