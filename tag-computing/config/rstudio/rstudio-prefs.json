@@ -33,7 +33,7 @@
     "scroll_past_end_of_document": true,
     "save_files_before_build": true,
     "editor_theme": "Vibrant Ink",
-    "default_project_location": "~/Documents/R",
+    "default_project_location": "~/code/R",
     "wrap_tab_navigation": false,
     "save_workspace": "never",
     "remove_history_duplicates": true,
