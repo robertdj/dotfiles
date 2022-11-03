@@ -11,5 +11,11 @@
     "julia.symbolCacheDownload": true,
     "window.zoomLevel": 1,
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "$HOME/.vim/vimrc"
+    "vim.vimrc.path": "$HOME/.vim/vimrc",
+    "python.terminal.launchArgs": [
+    "-m",
+    "IPython",
+    "--no-autoindent"
+    ],
+    "editor.largeFileOptimizations": false
 }
