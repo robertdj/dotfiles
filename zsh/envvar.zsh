@@ -15,3 +15,5 @@ export LD_LIBRARY_PATH="/opt/R/4.2.1/lib/R/lib:$LD_LIBRARY_PATH"
 
 export JULIA_NUM_THREADS=4
 
+export PATH=$PATH:/usr/local/go/bin
+
