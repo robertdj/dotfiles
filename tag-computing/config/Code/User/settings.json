@@ -13,9 +13,9 @@
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "$HOME/.vim/vimrc",
     "python.terminal.launchArgs": [
-    "-m",
-    "IPython",
-    "--no-autoindent"
+        "-m",
+        "IPython",
+        "--no-autoindent"
     ],
     "editor.largeFileOptimizations": false
 }
