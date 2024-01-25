@@ -17,5 +17,7 @@
         "IPython",
         "--no-autoindent"
     ],
-    "editor.largeFileOptimizations": false
+    "editor.largeFileOptimizations": false,
+    "editor.formatOnSave": true,
+    "ruff.organizeImports": true,
 }
