@@ -2,16 +2,18 @@
     "telemetry.enableTelemetry": false,
     "julia.executablePath": "/usr/local/bin/julia",
     "julia.enableTelemetry": true,
+    "julia.symbolCacheDownload": true,
     "terminal.integrated.commandsToSkipShell": [
         "language-julia.interrupt"
     ],
     "julia.usePlotPane": true,
     "r.rterm.linux": "/usr/local/bin/R",
     "workbench.startupEditor": "newUntitledFile",
-    "julia.symbolCacheDownload": true,
-    "window.zoomLevel": 1,
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "$HOME/.vim/vimrc",
+    "python.experiments.optInto": [
+        "pythonREPLSmartSend"
+    ],
     "python.terminal.launchArgs": [
         "-m",
         "IPython",
