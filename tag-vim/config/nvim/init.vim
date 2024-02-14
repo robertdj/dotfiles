@@ -1,34 +1,3 @@
-set nocompatible            " disable compatibility to old-time vi
-
-set showmatch               " show matching 
-set ignorecase              " case insensitive 
-
-" set mouse=v                 " middle-click paste with 
-set hlsearch                " highlight search 
-set incsearch               " incremental search
-set tabstop=4               " number of columns occupied by a tab 
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
-set expandtab               " converts tabs to white space
-set shiftwidth=4            " width for autoindents
-set autoindent              " indent a new line the same amount as the line just typed
-
-set number
-set relativenumber
-
-set wildmode=longest,list   " get bash-like tab completions
-
-filetype plugin indent on   "allow auto-indenting depending on file type
-syntax on                   " syntax highlighting
-set clipboard=unnamedplus   " using system clipboard
-filetype plugin on
-
-" set cursorline              " highlight current cursorline
-set ttyfast                 " Speed up scrolling in Vim
-
-" set noswapfile            " disable creating swap file
-" set backupdir=~/.cache/vim " Directory to store backup files.
-
-
 call plug#begin("~/.vim/plugged")
 Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' } | Plug 'tyok/nerdtree-ack' , { 'on': 'NERDTreeToggle' }
 nmap <silent> <F3> :NERDTreeToggle<CR>
@@ -68,9 +37,75 @@ Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'godlygeek/tabular'
 
 Plug 'ixru/nvim-markdown'
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_folding_disabled=1
+imap <Plug> <Plug>Markdown_Jump
+
+" Plug 'quarto-dev/quarto-nvim'
 
 " Chance surrounding symbols
 Plug 'tpope/vim-surround'
+autocmd FileType c,cpp setlocal commentstring=//\ %s
+
+" Commenting code
+Plug 'tpope/vim-commentary'
 
 call plug#end()
+
+
+" disable compatibility to old-time vi
+set nocompatible
+
+" Show matching search results as they are typed
+set incsearch
+set showmatch
+
+" Smart search: 
+" All-lowercase string: Case-insensitive search
+" Not all-lowercase string: Case-sensitive search
+set ignorecase
+set smartcase
+set hlsearch
+
+" Disable all conceal
+set conceallevel=0
+
+" Shortcut for turning on paste mode (:set paste)
+set pastetoggle=<F12>
+
+" Replace globally by default
+set gdefault
+
+" Indentation
+set tabstop=4
+" set softtabstop=4
+set shiftwidth=4
+
+" Convert tabs to spaces
+set expandtab
+set smartindent
+
+" indent a new line the same amount as the line just typed
+set autoindent
+
+" Line numbers are relative to current line *and* show current line number
+set number
+set relativenumber
+
+" Control tab completion
+set wildmode=longest,list
+
+filetype plugin indent on   "allow auto-indenting depending on file type
+" syntax highlighting
+syntax on
+
+" using system clipboard
+set clipboard=unnamedplus
+filetype plugin on
+
+" disable creating swap file
+set noswapfile
+"
+" Directory to store backup files.
+set backupdir=~/.cache/vim
 
