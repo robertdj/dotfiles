@@ -50,6 +50,12 @@ autocmd FileType c,cpp setlocal commentstring=//\ %s
 " Commenting code
 Plug 'tpope/vim-commentary'
 
+" Language Server Protocol
+Plug 'dense-analysis/ale'
+let g:ale_linters={
+\ 'python': ['pyright'],
+\}
+
 call plug#end()
 
 
