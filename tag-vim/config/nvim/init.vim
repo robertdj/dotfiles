@@ -103,12 +103,14 @@ set relativenumber
 " Control tab completion
 set wildmode=longest,list
 
-filetype plugin indent on   "allow auto-indenting depending on file type
+"allow auto-indenting depending on file type
+filetype plugin indent on
+
 " syntax highlighting
 syntax on
 
 " using system clipboard
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 filetype plugin on
 
 " disable creating swap file
