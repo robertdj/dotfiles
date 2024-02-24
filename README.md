@@ -7,6 +7,11 @@ The files are managed using [rcm](https://github.com/thoughtbot/rcm).
 I use tags as explained in rcm's README. 
 Each tag is explained in a section below.
 
+Before running `rcup`, rcm's own dotfile should be symlinked to the homedir with the command
+```
+ln -s /path/to/dotfiles/rcrc ~/.rcrc
+```
+
 When possible I use ZSH as my shell and if that is not available, I use BASH.
 
 
