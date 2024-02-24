@@ -51,13 +51,15 @@ autocmd FileType c,cpp setlocal commentstring=//\ %s
 Plug 'tpope/vim-commentary'
 
 " Language Server Protocol
-Plug 'dense-analysis/ale'
-let g:ale_linters={
-\ 'python': ['pyright'],
-\}
+Plug 'neovim/nvim-lspconfig'
+" Plug 'dense-analysis/ale'
+" let g:ale_linters={
+" \ 'python': ['pyright'],
+" \}
 
 call plug#end()
 
+lua require'lspconfig'.pyright.setup {on_attach = on_attach,settings = {pyright = {autoImportCompletion = true,},python = {analysis = {autoSearchPaths = true,diagnosticMode = 'openFilesOnly',useLibraryCodeForTypes = true,typeCheckingMode = 'off'}}}}
 
 " disable compatibility to old-time vi
 set nocompatible
