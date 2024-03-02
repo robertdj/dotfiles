@@ -119,3 +119,6 @@ set noswapfile
 " Directory to store backup files.
 set backupdir=~/.cache/vim
 
+" Don't require confirmation when saving remote file
+let g:netrw_silent=1
+

@@ -209,6 +209,9 @@ autocmd Filetype mail setlocal textwidth=0
 set wildmode=longest,list,full
 set wildmenu
 
+" Don't require confirmation when saving remote file
+let g:netrw_silent=1
+
 
 " ------------------------------------------------------------ 
 "  Key remapping
