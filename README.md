@@ -72,7 +72,7 @@ I use Vim and Neovim extensibly.
 Plugins ared managed with [vim-plug](https://github.com/junegunn/vim-plug).
 On a fresh install/new user vim-plug has to be installed and the plugins have to be downloaded and installed.
 
-As illustrated on [Thoughtbot's webpage](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos), this can be accomplished with rcm using a hook.
+As illustrated on [Thoughtbot's webpage](https://thoughtbot.com/blog/rcm-for-rc-files-in-dotfiles-repos), this can be accomplished with rcm using a hook.
 
 The `.vim` directory is symlinked on the top level (as specified in the `rcrc` file).
 
