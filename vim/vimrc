@@ -217,11 +217,6 @@ let g:netrw_silent=1
 "  Key remapping
 " ------------------------------------------------------------ 
 
-" F1 remap is due to Thinkpad keyboard
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
-
 " Dollar ($) like on Mac keyboard
 inoremap ½ $
 nnoremap ½ $
