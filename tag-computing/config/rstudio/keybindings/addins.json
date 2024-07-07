@@ -1,4 +1,5 @@
 {
     "targets::rstudio_addin_tar_load": "Ctrl+Alt+L",
-    "breakerofchains::break_chain": "Ctrl+B"
+    "breakerofchains::break_chain": "Ctrl+B",
+    "datapasta::tribble_paste": "Shift+Cmd+T"
 }
