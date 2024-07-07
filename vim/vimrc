@@ -133,6 +133,16 @@ let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.whitespace = 'Ξ'
 
+Plug 'sillybun/vim-repl'
+nnoremap <F4> :REPLToggle<Cr>
+let g:repl_python_pre_launch_command = 'source .venv/bin/activate'
+" let g:sendtorepl_invoke_key = "<S-CR>"
+" let g:sendtorepl_invoke_key = "<C-CR>"
+
+
+
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 
