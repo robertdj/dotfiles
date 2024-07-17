@@ -139,6 +139,10 @@ let g:repl_python_pre_launch_command = 'source .venv/bin/activate'
 " let g:sendtorepl_invoke_key = "<S-CR>"
 " let g:sendtorepl_invoke_key = "<C-CR>"
 
+Plug 'SirVer/ultisnips'
+let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+let g:UltiSnipsSnippetDirectories = ['UltiSnips']
+let g:UltiSnipsExpandTrigger="<c-b>"
 
 
 Plug 'github/copilot.vim'
