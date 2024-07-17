@@ -59,8 +59,8 @@ let g:indentLine_char = '┊'
 let g:indentLine_setConceal = 0
 
 " Run scripts within Vim
-Plug 'thinca/vim-quickrun'
-nmap <silent> <F4> :QuickRun<CR>
+" Plug 'thinca/vim-quickrun'
+" nmap <silent> <F4> :QuickRun<CR>
 
 " Control how to paste
 Plug 'vim-scripts/UnconditionalPaste'
