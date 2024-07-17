@@ -12,15 +12,15 @@ Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' } | Plug 'tyok/nerdtree-ac
 nmap <silent> <F3> :NERDTreeToggle<CR>
 
 " Search using Ack or the silver searcher
-Plug 'tyok/ack.vim'
+" Plug 'tyok/ack.vim'
 
-if executable('ag')
-  let g:ackprg = "ag --nocolor --nogroup --column"
-elseif executable('ack-grep')
-  let g:ackprg = "ack-grep --nocolor --nogroup --column"
-elseif executable('ack')
-  let g:ackprg = "ack --nocolor --nogroup --column"
-endif
+" if executable('ag')
+"   let g:ackprg = "ag --nocolor --nogroup --column"
+" elseif executable('ack-grep')
+"   let g:ackprg = "ack-grep --nocolor --nogroup --column"
+" elseif executable('ack')
+"   let g:ackprg = "ack --nocolor --nogroup --column"
+" endif
 
 "" Arrange tabular text
 " Must come before vim-markdown
