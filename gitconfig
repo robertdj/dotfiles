@@ -31,3 +31,5 @@
 	helper = cache
 [init]
 	defaultBranch = main
+[url "github:"]
+	insteadOf = git@github.com:
