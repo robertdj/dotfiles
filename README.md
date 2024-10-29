@@ -35,16 +35,15 @@ The dotfiles are related to
 
 I have one Mac and multiple computers with GNU/Linux. 
 These are managed with the tags `mac` and `linux`.
-Currently the operating systems only differ in the shell aliases.
 
 
 ## Computing tag
 
-My computing tools are [Julia](http://julialang.org) and [R](http://www.r-project.org) with [RStudio](https://rstudio.com). 
+My computing tools are [Julia](http://julialang.org), Python and [R](http://www.r-project.org) with [RStudio](https://rstudio.com). 
 
 RStudio's preferences can also be used on Windows in the hidden folder `C:/Users/<user>/AppData/Roaming/RStudio`.
 
-I sometimes use [VS Code](https://code.visualstudio.com) as an IDE for Julia with the [Julia for VS Code](https://www.julia-vscode.org) extension.
+I use [VS Code](https://code.visualstudio.com) as an IDE for Python and Julia.
 VS Code's configs can also be used on Windows/Mac -- check out [its docs](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations).
 
 
@@ -61,14 +60,14 @@ I [rely heavily](http://dahl-jacobsen.dk/tips/blog/2020-04-23-my-workflow-with-l
 For custom drawings in LaTeX I have relied on [TikZ & PGF](https://github.com/pgf-tikz/pgf) and used [tikz2pdf](https://github.com/robertdj/tikz2pdf) to speed up the iterative process.
 
 
-## tmux tag
+## tmux and zellij tags
 
-As a terminal multiplexer I use [tmux](https://tmux.github.io).
+As a terminal multiplexers I use [tmux](https://tmux.github.io) or [zellij](https://zellij.dev/).
 
 
 ## Vim tag
 
-I use Vim and Neovim extensibly.
+I use Vim (and Neovim) extensibly.
 Plugins ared managed with [vim-plug](https://github.com/junegunn/vim-plug).
 On a fresh install/new user vim-plug has to be installed and the plugins have to be downloaded and installed.
 
