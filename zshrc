@@ -37,17 +37,15 @@ fi
 # Source configurations
 # Many are copied from Oh My ZSH
 
-source ~/.zsh/alias.zsh 	 # Aliases
-source ~/.host_alias.zsh 	 # Host specific aliases
+source ~/.zsh/alias.zsh
 source ~/.zsh/completion.zsh
-source ~/.zsh/envvar.zsh 	 # Environment variables
-source ~/.zsh/function.zsh 	 # Shell functions
-source ~/.zsh/history.zsh 	 # History options
+source ~/.zsh/envvar.zsh
+source ~/.zsh/function.zsh
+source ~/.zsh/history.zsh
 source ~/.zsh/misc.zsh
 source ~/.zsh/keybinding.zsh
-#source ~/.zsh/grep.zsh
 source ~/.zsh/spectrum.zsh
-source ~/.zsh/prompt.zsh 	 # Prompt
+source ~/.zsh/prompt.zsh
 
 
 # ------------------------------------------------------------ 
