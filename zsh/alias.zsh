@@ -1,5 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 
-# Get DHCP leases from EdgeOS router
 alias venv_activate='source .venv/bin/activate'
+
+HOST_ALIAS=~/.host_alias.zsh
+[[ -f $HOST_ALIAS ]] && . $HOST_ALIAS
