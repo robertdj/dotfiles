@@ -87,3 +87,16 @@ My ZSH plugins are managed by [zgen](https://github.com/tarjoilija/zgen).
 
 My `zshrc` file is heavily inspired [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh).
 
+
+# Setup
+
+I use the following programs without explicit tags:
+
+- [Alacritty](https://alacritty.org) on macOS instead of the default terminal
+- [bat](https://github.com/sharkdp/bat)
+- [fd](https://github.com/sharkdp/fd)
+- [fzf](https://github.com/junegunn/fzf)
+- [pandoc](https://pandoc.org)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [xplr](https://github.com/sayanarijit/xplr)
+
