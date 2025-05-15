@@ -1,0 +1,11 @@
+[
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.positronConsole.focusConsole"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "positronConsoleFocused"
+    },
+]

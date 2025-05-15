@@ -1,0 +1,41 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.startupEditor": "none",
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vim/vimrc",
+    "ruff.organizeImports": true,
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.tabSize": 4
+    },
+    "workbench.settings.applyToAllProfiles": []
+}
