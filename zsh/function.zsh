@@ -3,15 +3,14 @@ function zsh_stats() {
 }
 
 
-function leases()
-{
-	if [ "$1" != "" ]; then
-		EDGE="$1"
-	else
-		EDGE="edge"
-	fi
-
-	'ssh edge "/opt/vyatta/bin/vyatta-op-cmd-wrapper show dhcp leases"'
+function cdx() {
+    local target
+    target=$(xplr)
+    if [ -d "$target" ]; then
+        cd "$target" || return
+    elif [ -f "$target" ]; then
+        cd "$(dirname "$target")" || return
+    fi
 }
 
 
