@@ -44,12 +44,6 @@ nmap <C-n> <Plug>IMAP_JumpForward
 " Support for Go
 Plug 'fatih/vim-go'
 
-" Support for fish shell
-Plug 'dag/vim-fish'
-
-" Match tags in HTML
-Plug 'Valloric/MatchTagAlways'
-
 " Commenting code
 Plug 'tpope/vim-commentary'
 
@@ -75,15 +69,6 @@ Plug 'tpope/vim-surround'
 
 " Interpret Unix style date correctly
 Plug 'tpope/vim-speeddating'
-
-" Integration with R
-Plug 'jalvesaq/Nvim-R'
-set <M-->=-
-let R_assign_map = '<M-->'
-tnoremap <C-h> <C-w>h
-tnoremap <C-j> <C-w>j
-tnoremap <C-k> <C-w>k
-tnoremap <C-l> <C-w>l
 
 " Support Julia syntax
 Plug 'JuliaEditorSupport/julia-vim'
@@ -132,12 +117,6 @@ let g:airline_symbols.crypt = '🔒'
 let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.whitespace = 'Ξ'
-
-Plug 'sillybun/vim-repl'
-nnoremap <F4> :REPLToggle<Cr>
-let g:repl_python_pre_launch_command = 'source .venv/bin/activate'
-" let g:sendtorepl_invoke_key = "<S-CR>"
-" let g:sendtorepl_invoke_key = "<C-CR>"
 
 Plug 'SirVer/ultisnips'
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
