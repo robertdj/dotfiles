@@ -13,5 +13,11 @@
     ],
     "editor.largeFileOptimizations": false,
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "ruff.organizeImports": true,
+    "C_Cpp.formatting": "vcFormat",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 }
