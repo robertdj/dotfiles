@@ -99,4 +99,5 @@ I use the following programs without explicit tags:
 - [pandoc](https://pandoc.org)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [xplr](https://github.com/sayanarijit/xplr)
+- [caffeine](https://www.caffeine-app.net)
 
