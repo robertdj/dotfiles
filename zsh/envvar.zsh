@@ -4,6 +4,8 @@ export TERM='xterm-256color'
 export EDITOR="vim"
 export VIMHOME="$HOME/.vim"
 
+export GEM_HOME="$HOME/.gem"
+
 export JULIA_NUM_THREADS=4
 
 HOST_ENVVAR=~/.host_envvar.zsh
