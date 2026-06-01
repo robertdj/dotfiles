@@ -5,11 +5,12 @@
 	excludesfile = ~/.gitignore
 	editor = vim
 [alias]
-	st = status
-	co = checkout
-	rv = remote -v
-	ba = branch -a
+    st = status
+    co = checkout
+    rv = remote -v
+    ba = branch -a
     l = log --graph
+    c = commit
 [push]
 	default = simple
 [difftool "sourcetree"]
