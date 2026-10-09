@@ -58,6 +58,10 @@ compinit -i -d "${ZSH_COMPDUMP}"
 
 
 # ------------------------------------------------------------ 
+# zoxide
+eval "$(zoxide init zsh)"
+
+# ------------------------------------------------------------ 
 # Fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
